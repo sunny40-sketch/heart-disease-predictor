@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # load model
-model = joblib.load(r"C:\Users\kandu\OneDrive\Pictures\Desktop\Heart_dis\heart_model.pkl")
+model = joblib.load("heart_model.pkl")
 
 st.title("Heart Disease Predictor")
 st.write("Enter patient details to predict heart disease risk")
