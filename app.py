@@ -33,7 +33,7 @@ if st.button("Predict"):
                                         "oldpeak","slope","ca","thal"])
     prediction = model.predict(input_data)[0]
 
-    if prediction == 1:
+    if prediction == 0:
         st.error("High risk of heart disease")
     else:
         st.success("Low risk of heart disease")
